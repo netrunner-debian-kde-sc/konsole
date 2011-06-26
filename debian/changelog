@@ -1,0 +1,6 @@
+konsole (4:4.6.90-0ubuntu1~ppa1) oneiric; urgency=low
+
+  * New upstream release candidate 
+    - update for split packaging
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 26 Jun 2011 20:11:54 +0200
