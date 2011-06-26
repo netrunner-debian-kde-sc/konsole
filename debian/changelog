@@ -1,6 +1,7 @@
-konsole (4:4.6.90-0ubuntu1~ppa1) oneiric; urgency=low
+konsole (4:4.6.90+repack-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream release candidate 
     - update for split packaging
+  * Repack upstream tar to include COPYING files
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 26 Jun 2011 20:11:54 +0200
