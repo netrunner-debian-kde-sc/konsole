@@ -1,4 +1,4 @@
-This package was debianized by the Kubuntu Developers on 
+This package was debianized by the Kubuntu Developers on
 Fri, 26 Jun 2011 20:19:00 +0200.
 
 It was downloaded from ftp://ftp.kde.org
@@ -17,7 +17,7 @@ Copyright 2005 by Maksim Orlovich <maksim@kde.org>
 Copyright 2006-2008 by Robert Knight <robertknight@gmail.com>
 Copyright 2009 by Thomas Dreibholz <dreibh@iem.uni-due.de>
 Copyright (C) 1989, 1991 Free Software Foundation, Inc
-Copyright (c) 1998 by Lars Doelle <lars.doelle@on-line.de>                 
+Copyright (c) 1998 by Lars Doelle <lars.doelle@on-line.de>
 Copyright (C) 2009 Patrick Spendrin <ps_ml@gmx.de>
 Copyright 2010 by Kurt Hindenburg <kurt.hindenburg@gmail.com>
 
@@ -37,8 +37,8 @@ Other used licenses:
   GNU Library General Public License, version 2 (LGPL-2)
     The following files are licensed under this license:
 
-	src/ZModemDialog.h
-	src/ZModemDialog.cpp
+    src/ZModemDialog.h
+    src/ZModemDialog.cpp
 
 
   On Debian systems, the complete text of the
@@ -49,8 +49,8 @@ Other used licenses:
 --
   GNU Library General Public License, version 2 or later (LGPL-2+)
 
-	src/TerminalCharacterDecoder.cpp
-	src/TerminalCharacterDecoder.h
+    src/TerminalCharacterDecoder.cpp
+    src/TerminalCharacterDecoder.h
 
 
   On Debian systems, the complete text of the
@@ -62,7 +62,7 @@ Other used licenses:
   MIT-like License (MIT)
     The following file is licensed under this license:
 
-	src/XKB.cpp
+    src/XKB.cpp
 
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -108,6 +108,6 @@ docs/
 
 
 The Debian packaging is Copyright (C) 2007-2010, Debian Qt/KDE Maintainers
-<debian-qt-kde@lists.debian.org>, (C) 2011 Kubuntu Developers 
+<debian-qt-kde@lists.debian.org>, (C) 2011 Kubuntu Developers
 <kubuntu-devel@lists.ubuntu.com> and is licensed under the GPL,
 see `/usr/share/common-licenses/GPL\'.
