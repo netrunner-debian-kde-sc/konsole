@@ -1,8 +1,12 @@
-konsole (4:4.7.0-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
+  [ Jonathan Thomas ]
   * New upstream release
 
- -- Jonathan Thomas <echidnaman@kubuntu.org>  Fri, 22 Jul 2011 21:01:27 -0400
+  [ Felix Geyer ]
+  * Fix dependency from konsole-dbg on konsole.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 29 Jul 2011 11:21:21 +0200
 
 konsole (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
 

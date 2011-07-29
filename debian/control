@@ -27,7 +27,7 @@ Package: konsole-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, konsole (= ${source:Version})
+Depends: ${misc:Depends}, konsole (= ${binary:Version})
 Breaks: kdebase-dbg (<< 4:4.6.80)
 Replaces: kdebase-dbg (<< 4:4.6.80)
 Description: debugging symbols for the KDE X terminal emulator
