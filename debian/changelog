@@ -1,8 +1,8 @@
-konsole (4:4.7.1-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.7.1-0ubuntu1) oneiric; urgency=low
 
   * New upstream release
 
- -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Fri, 02 Sep 2011 22:13:12 +0200
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Thu, 08 Sep 2011 13:18:47 -0400
 
 konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
