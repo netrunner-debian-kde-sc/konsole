@@ -1,23 +1,5 @@
-konsole (4:4.7.1-0ubuntu1) oneiric; urgency=low
+konsole (4:4.7.1-0r0) UNRELEASED; urgency=low
 
-  * New upstream release
+  * Initial release.
 
- -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Thu, 08 Sep 2011 13:18:47 -0400
-
-konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
-
-  [ Jonathan Thomas ]
-  * New upstream release
-
-  [ Felix Geyer ]
-  * Fix dependency from konsole-dbg on konsole.
-
- -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 29 Jul 2011 11:21:21 +0200
-
-konsole (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
-
-  * New upstream release candidate 
-    - update for split packaging
-  * Repack upstream tar to include COPYING files
-
- -- Philip Muškovac <yofel@kubuntu.org>  Fri, 08 Jul 2011 12:41:10 +0200
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Thu, 15 Sep 2011 14:43:23 +0200
