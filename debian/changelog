@@ -1,3 +1,10 @@
+konsole (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 16 Sep 2011 01:01:47 +0200
+
 konsole (4:4.7.1-0ubuntu1) oneiric; urgency=low
 
   * New upstream release
