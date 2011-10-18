@@ -1,8 +1,12 @@
 konsole (4:4.7.2-0ubuntu1) UNRELEASED; urgency=low
 
+  [ Rohan Garg ]
   * New upstream release
 
- -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Oct 2011 22:14:59 +0530
+  [ Philip Muškovac ]
+  * Add libx11-dev to build-deps so XKB is found. 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 18 Oct 2011 07:28:12 +0200
 
 konsole (4:4.7.1-0ubuntu2) oneiric; urgency=low
 
