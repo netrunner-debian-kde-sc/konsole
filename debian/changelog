@@ -1,7 +1,7 @@
-konsole (4:4.7.2-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
 
   [ Rohan Garg ]
-  * New upstream release
+  * New upstream release (LP: #872506)
 
   [ Philip Muškovac ]
   * Add libx11-dev to build-deps so XKB is found. 
