@@ -1,3 +1,9 @@
+konsole (4:4.7.3-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 01 Nov 2011 14:40:10 +0100
+
 konsole (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
 
   [ Rohan Garg ]
