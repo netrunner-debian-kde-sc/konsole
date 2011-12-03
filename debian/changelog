@@ -1,5 +1,6 @@
-konsole (4:4.7.2-0r1) UNRELEASED; urgency=low
+konsole (4:4.7.2-0r1) experimental; urgency=low
 
+  [ Eshat Cakar ]
   * Initial release. Start from the Ubuntu packaging, thanks!
 
- -- Eshat Cakar <info@eshat.de>  Tue, 04 Oct 2011 17:46:40 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:46:16 -0300
