@@ -1,3 +1,9 @@
+konsole (4:4.7.97-0r0) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Jan 2012 17:41:25 +0100
+
 konsole (4:4.7.4-1) experimental; urgency=low
 
   * New upstream release.
