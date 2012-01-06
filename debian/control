@@ -11,8 +11,8 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.7.95),
  libxkbfile-dev, libkonq5-dev
 Standards-Version: 3.9.2
 Homepage: http://www.kde.org/
-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/konsole/ubuntu
-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/konsole/ubuntu
+Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
+Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
 X-Debian-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/konsole.git
 X-Debian-Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/konsole.git
 
