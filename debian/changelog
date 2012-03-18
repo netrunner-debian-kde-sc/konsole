@@ -7,6 +7,13 @@ konsole (4:4.8.1-0r0) UNRELEASED; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 08 Mar 2012 21:14:11 +0100
 
+konsole (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 06 Mar 2012 11:47:50 +0100
+
+
 konsole (4:4.7.4-1) experimental; urgency=low
 
   * New upstream release.
