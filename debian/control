@@ -5,7 +5,7 @@ Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: José Manuel Santamaría Lema <panfaust@gmail.com>,
  Eshat Cakar <info@eshat.de>
-Build-Depends: kde-sc-dev-latest (>= 4:4.8.1),
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.2),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
  kdelibs5-dev (>= 4:4.8.1), libphonon-dev (>= 4:4.3.0),
  libxkbfile-dev, libkonq5-dev
