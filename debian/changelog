@@ -1,3 +1,9 @@
+konsole (4:4.8.3-0ubuntu0.1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu.org>  Thu, 03 May 2012 20:46:30 +0200
+
 konsole (4:4.8.2-0ubuntu1) precise; urgency=low
 
   * New upstream release
