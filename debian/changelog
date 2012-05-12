@@ -3,7 +3,7 @@ konsole (4:4.8.3-0r0) UNRELEASED; urgency=low
   * New upstream release.
 
   [ Eshat Cakar ]
-  * Bump kde-sc-dev-latest build dependency to version 4:4.8.2.
+  * Bump kde-sc-dev-latest build dependency to version 4:4.8.3.
   * Bump Standards-Version to 3.9.3, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 08 Mar 2012 21:14:11 +0100
