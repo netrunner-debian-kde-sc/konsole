@@ -1,6 +1,13 @@
 konsole (4:4.8.3-0r1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release:
+    - konsole does not require a restart to use newly installed fonts.
+      (Closes: #457218)
+    - konsole does not fail to draw bright colors in screen when TERM is set
+      to xterm-256colors. (Closes: #531752)
+    - "Show in menu" works even with languages than English. (Closes: #576148)
+    - konsole correctly sets the number of terminal lines and columns.
+      (Closes: #606617)
 
   [ Eshat Cakar ]
   * Bump kde-sc-dev-latest build dependency to version 4:4.8.3.
