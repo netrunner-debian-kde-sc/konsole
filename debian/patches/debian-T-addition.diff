@@ -1,6 +1,6 @@
 --- a/src/main.cpp
 +++ b/src/main.cpp
-@@ -117,6 +117,7 @@ void fillCommandLineOptions(KCmdLineOpti
+@@ -122,6 +122,7 @@ void fillCommandLineOptions(KCmdLineOpti
      // TODO - Document this option more clearly
      options.add("p <property=value>",ki18n("Change the value of a profile property."));
      options.add("list-profile-properties", ki18n("List all the profile properties names and their type (for use with -p)"));
