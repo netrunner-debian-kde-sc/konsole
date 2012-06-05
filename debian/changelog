@@ -4,6 +4,7 @@ konsole (4:4.8.4-0r0) UNRELEASED; urgency=low
 
   [ Eshat Cakar ]
   * Add watch file.
+  * Bump kde-sc-dev-latest build dependency to version 4:4.8.4.
 
  -- Eshat Cakar <info@eshat.de>  Tue, 05 Jun 2012 17:53:45 +0200
 
