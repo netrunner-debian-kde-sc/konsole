@@ -7,6 +7,10 @@ konsole (4:4.8.4-0r1) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to version 4:4.8.4.
   * Fix lintian maintainer-script-without-set-e message.
 
+  [ José Manuel Santamaría Lema ]
+  * Add one_profile_per_window.diff, this allows one to open new tabs
+    with ctrl+shift+t in a remote shell.
+
  -- Eshat Cakar <info@eshat.de>  Tue, 05 Jun 2012 17:53:45 +0200
 
 konsole (4:4.8.3-1) experimental; urgency=low
