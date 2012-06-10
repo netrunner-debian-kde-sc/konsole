@@ -1,6 +1,7 @@
-konsole (4:4.8.4-0r2) UNRELEASED; urgency=low
+konsole (4:4.8.4-1) unstable; urgency=low
 
   * New upstream release.
+  * Team upload.
 
   [ Eshat Cakar ]
   * Add watch file.
@@ -11,7 +12,7 @@ konsole (4:4.8.4-0r2) UNRELEASED; urgency=low
   * Add one_profile_per_window.diff, this allows one to open new tabs
     with ctrl+shift+t in a remote shell.
 
- -- Eshat Cakar <info@eshat.de>  Tue, 05 Jun 2012 17:53:45 +0200
+ -- Modestas Vainius <modax@debian.org>  Sun, 10 Jun 2012 15:13:29 +0300
 
 konsole (4:4.8.3-1) experimental; urgency=low
 
