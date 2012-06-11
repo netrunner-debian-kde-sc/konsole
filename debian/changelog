@@ -1,3 +1,9 @@
+konsole (4:4.8.90-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream beta release.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 11 Jun 2012 23:34:57 +0200
+
 konsole (4:4.8.80-0ubuntu1) quantal; urgency=low
 
   * New upstream release
