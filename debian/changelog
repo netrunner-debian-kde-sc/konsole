@@ -1,3 +1,13 @@
+konsole (4:4.8.90-0ubuntu2) quantal; urgency=low
+
+  * Backport Git commit ed31a8b0aa6fcd45177202a60db7167e2498c80f from master
+    (to be KDE SC 4.10)
+    - Adds a GUI checkbox per profile to enable/disable requiring the
+      CTRL key to drag-n-drop text.
+      The default is to require the CTRL key as before.
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 06 Jul 2012 17:21:45 -0400
+
 konsole (4:4.8.90-0ubuntu1) quantal; urgency=low
 
   * New upstream beta release.
