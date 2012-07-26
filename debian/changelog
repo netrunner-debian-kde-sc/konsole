@@ -1,3 +1,9 @@
+konsole (4:4.8.90-0ubuntu3) UNRELEASED; urgency=low
+
+  * Use direct build-depends versions rather than kde-sc-dev-latest
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 16:25:24 +0100
+
 konsole (4:4.8.90-0ubuntu2) quantal; urgency=low
 
   * Backport Git commit ed31a8b0aa6fcd45177202a60db7167e2498c80f from master
