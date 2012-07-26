@@ -1,0 +1,155 @@
+Description: Adds a GUI checkbox to enable/disable requiring the CTRL key to drag-n-drop text.
+ konsole (4:4.8.90-0ubuntu2) quantal; urgency=low
+ .
+   * Backport Git commit ed31a8b0aa6fcd45177202a60db7167e2498c80f from master
+     (to be KDE SC 4.10)
+     - Adds a GUI checkbox per profile to enable/disable requiring the
+       CTRL key to drag-n-drop text.
+       The default is to require the CTRL key as before.
+ .
+ Should be dropped when first 4.10 beta is packaged.
+Author: Scott Kitterman <scott@kitterman.com>
+Origin: <upstream>
+Forwarded: <not-needed>
+Reviewed-By: Scott Kitterman <scott@kitterman.com>
+Last-Update: <2012-07-06>
+
+--- konsole-4.8.90.orig/src/TerminalDisplay.cpp
++++ konsole-4.8.90/src/TerminalDisplay.cpp
+@@ -314,7 +314,7 @@ TerminalDisplay::TerminalDisplay(QWidget
+     , _hasTextBlinker(false)
+     , _underlineLinks(true)
+     , _isFixedSize(false)
+-    , _ctrlDrag(true)
++    , _ctrlRequiredForDrag(true)
+     , _tripleClickMode(Enum::SelectWholeLine)
+     , _possibleTripleClick(false)
+     , _resizeWidget(0)
+@@ -1780,7 +1780,7 @@ void TerminalDisplay::mousePressEvent(QM
+         selected =  _screenWindow->isSelected(pos.x(), pos.y());
+ 
+         // Drag only when the Control key is hold
+-        if ((!_ctrlDrag || ev->modifiers() & Qt::ControlModifier) && selected) {
++        if ((!_ctrlRequiredForDrag || ev->modifiers() & Qt::ControlModifier) && selected) {
+             _dragInfo.state = diPending;
+             _dragInfo.start = ev->pos();
+         } else {
+--- konsole-4.8.90.orig/src/EditProfileDialog.ui
++++ konsole-4.8.90/src/EditProfileDialog.ui
+@@ -838,6 +838,16 @@
+             </property>
+            </widget>
+           </item>
++          <item>
++           <widget class="QCheckBox" name="controlDragButton">
++            <property name="toolTip">
++             <string>Selected text will require control key plus click to drag.</string>
++            </property>
++            <property name="text">
++             <string>Require Ctrl key for drag and drop</string>
++            </property>
++           </widget>
++          </item>
+          </layout>
+         </widget>
+        </item>
+--- konsole-4.8.90.orig/src/Profile.h
++++ konsole-4.8.90/src/Profile.h
+@@ -196,6 +196,8 @@ public:
+          * underlined when hovered by the mouse pointer.
+          */
+         UnderlineLinksEnabled,
++        /** (bool) If true, control key must be pressed to click and drag selected text. */
++        CtrlRequiredForDrag,
+         /** (bool) If true, automatically copy selected text into the clipboard */
+         AutoCopySelectedText,
+         /** (bool) If true, middle mouse button pastes from X Selection */
+--- konsole-4.8.90.orig/src/EditProfileDialog.cpp
++++ konsole-4.8.90/src/EditProfileDialog.cpp
+@@ -986,6 +986,10 @@ void EditProfileDialog::setupMousePage(c
+             SLOT(toggleUnderlineLinks(bool))
+         },
+         {
++            _ui->controlDragButton , Profile::CtrlRequiredForDrag,
++            SLOT(toggleControlDrag(bool))
++        },
++        {
+             _ui->copyTextToClipboardButton , Profile::AutoCopySelectedText,
+             SLOT(toggleCopyTextToClipboard(bool))
+         },
+@@ -1103,6 +1107,10 @@ void EditProfileDialog::toggleUnderlineL
+ {
+     updateTempProfileProperty(Profile::UnderlineLinksEnabled, enable);
+ }
++void EditProfileDialog::toggleControlDrag(bool enable)
++{
++    updateTempProfileProperty(Profile::CtrlRequiredForDrag, enable);
++}
+ void EditProfileDialog::toggleCopyTextToClipboard(bool enable)
+ {
+     updateTempProfileProperty(Profile::AutoCopySelectedText, enable);
+--- konsole-4.8.90.orig/src/ViewManager.cpp
++++ konsole-4.8.90/src/ViewManager.cpp
+@@ -803,6 +803,7 @@ void ViewManager::applyProfileToView(Ter
+ 
+     view->setAutoCopySelectedText(profile->autoCopySelectedText());
+     view->setUnderlineLinks(profile->underlineLinksEnabled());
++    view->setControlDrag(profile->property<bool>(Profile::CtrlRequiredForDrag));
+     view->setBidiEnabled(profile->bidiRenderingEnabled());
+ 
+     int middleClickPasteMode = profile->property<int>(Profile::MiddleClickPasteMode);
+--- konsole-4.8.90.orig/src/Profile.cpp
++++ konsole-4.8.90/src/Profile.cpp
+@@ -103,6 +103,7 @@ const Profile::PropertyInfo Profile::Def
+     , { WordCharacters , "WordCharacters" , INTERACTION_GROUP , QVariant::String }
+     , { TripleClickMode , "TripleClickMode" , INTERACTION_GROUP , QVariant::Int }
+     , { UnderlineLinksEnabled , "UnderlineLinksEnabled" , INTERACTION_GROUP , QVariant::Bool }
++    , { CtrlRequiredForDrag, "CtrlRequiredForDrag" , INTERACTION_GROUP , QVariant::Bool }
+     , { AutoCopySelectedText , "AutoCopySelectedText" , INTERACTION_GROUP , QVariant::Bool }
+     , { PasteFromSelectionEnabled , "PasteFromSelectionEnabled" , INTERACTION_GROUP , QVariant::Bool }
+     , { PasteFromClipboardEnabled , "PasteFromClipboardEnabled" , INTERACTION_GROUP , QVariant::Bool }
+@@ -167,6 +168,7 @@ FallbackProfile::FallbackProfile()
+     setProperty(FlowControlEnabled, true);
+     setProperty(BlinkingTextEnabled, true);
+     setProperty(UnderlineLinksEnabled, true);
++    setProperty(CtrlRequiredForDrag,true);
+     setProperty(AutoCopySelectedText, false);
+     setProperty(PasteFromSelectionEnabled, true);
+     setProperty(PasteFromClipboardEnabled, false);
+--- konsole-4.8.90.orig/src/TerminalDisplay.h
++++ konsole-4.8.90/src/TerminalDisplay.h
+@@ -150,11 +150,11 @@ public:
+     /** Specifies whether or not text can blink. */
+     void setBlinkingTextEnabled(bool blink);
+ 
+-    void setCtrlDrag(bool enable) {
+-        _ctrlDrag = enable;
++    void setControlDrag(bool enable) {
++        _ctrlRequiredForDrag = enable;
+     }
+-    bool ctrlDrag() const {
+-        return _ctrlDrag;
++    bool ctrlRequiredForDrag() const {
++        return _ctrlRequiredForDrag;
+     }
+ 
+     /** Sets how the text is selected when the user triple clicks within the display. */
+@@ -766,7 +766,7 @@ private:
+     bool _underlineLinks;     // Underline URL and hosts on mouse hover
+     bool _isFixedSize; // columns/lines are locked.
+ 
+-    bool _ctrlDrag; // require Ctrl key for drag selected text
++    bool _ctrlRequiredForDrag; // require Ctrl key for drag selected text
+ 
+     Enum::TripleClickModeEnum _tripleClickMode;
+     bool _possibleTripleClick;  // is set in mouseDoubleClickEvent and deleted
+--- konsole-4.8.90.orig/src/EditProfileDialog.h
++++ konsole-4.8.90/src/EditProfileDialog.h
+@@ -150,6 +150,7 @@ private slots:
+ 
+     // mouse page
+     void toggleUnderlineLinks(bool);
++    void toggleControlDrag(bool);
+     void toggleCopyTextToClipboard(bool);
+     void pasteFromX11Selection();
+     void pasteFromClipboard();
