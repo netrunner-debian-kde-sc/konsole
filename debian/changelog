@@ -2,8 +2,9 @@ konsole (4:4.9.0-0ubuntu1) UNRELEASED; urgency=low
 
   * Use direct build-depends versions rather than kde-sc-dev-latest
   * New upstream release
+  * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 18:02:14 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 22:29:34 +0100
 
 konsole (4:4.8.90-0ubuntu2) quantal; urgency=low
 
