@@ -1,4 +1,4 @@
-konsole (4:4.9.0-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.9.0-0ubuntu1) quantal; urgency=low
 
   * Use direct build-depends versions rather than kde-sc-dev-latest
   * New upstream release
