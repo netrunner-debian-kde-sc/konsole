@@ -1,8 +1,9 @@
 konsole (4:4.9.2-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream bugfix release
+  * New upstream bugfix release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Oct 2012 14:52:55 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Oct 2012 15:22:51 +0100
 
 konsole (4:4.9.1-0ubuntu1) quantal; urgency=low
 
