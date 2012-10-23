@@ -1,6 +1,7 @@
 konsole (4:4.8.4-2) UNRELEASED; urgency=low
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * konsole-dbg now recommends kdelibs5-dbg.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 23 Oct 2012 18:29:05 -0300
 
