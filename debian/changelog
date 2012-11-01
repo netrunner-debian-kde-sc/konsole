@@ -3,6 +3,11 @@ konsole (4:4.8.4-2) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * konsole-dbg now recommends kdelibs5-dbg.
 
+  [ Pino Toscano ]
+  * Backport upstream commit e48cee6cca742a5bdb3daf6fa0b7c76073217faa to avoid
+    looking up executables when an absolute path is specified; patch
+    upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 23 Oct 2012 18:29:05 -0300
 
 konsole (4:4.8.4-1) unstable; urgency=low
