@@ -1,3 +1,9 @@
+konsole (4:4.9.3-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release (LP: #1074747)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Nov 2012 02:39:37 +0100
+
 konsole (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
 
   * New upstream bugfix release
