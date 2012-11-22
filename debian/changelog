@@ -1,7 +1,7 @@
-konsole (4:4.9.80-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.9.80-0ubuntu1) raring; urgency=low
 
   * New upstream beta release
-  * New upstream beta release
+  * Remove ControlDragSettings.diff now upstream
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 Nov 2012 16:01:56 +0000
 
