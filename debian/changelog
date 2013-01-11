@@ -5,9 +5,9 @@ konsole (4:4.9.5-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Update patches:
     - drop one_profile_per_window.diff, problem solved upstream.
+    - drop upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch,
+      no longer needed.
     - refresh debian-T-addition.diff.
-    - refresh upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch
-      to make it apply without any offset.
   * Bump kde-sc-dev-latest build dependency to version 4:4.9.5.
   * Bump build depends on other KDE SC components to 4:4.9.
 
