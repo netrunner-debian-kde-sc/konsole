@@ -9,13 +9,11 @@ Subject: [PATCH] No need to lookup executable PATH when absolute path is
  src/Session.cpp |    5 +++++
  1 file changed, 5 insertions(+)
 
-diff --git a/src/Session.cpp b/src/Session.cpp
-index 732858d..cf325b0 100644
 --- a/src/Session.cpp
 +++ b/src/Session.cpp
-@@ -369,6 +369,11 @@ QString Session::checkProgram(const QString& program)
-     if (exec.isEmpty())
-         return QString();
+@@ -385,6 +385,11 @@ QString Session::checkProgram(const QStr
+         return exec;
+     }
  
 +    QFileInfo info(exec);
 +    if (info.isAbsolute() && info.exists() && info.isExecutable()) {
@@ -25,6 +23,3 @@ index 732858d..cf325b0 100644
      exec = KRun::binaryName(exec, false);
      exec = KShell::tildeExpand(exec);
      QString pexec = KStandardDirs::findExe(exec);
--- 
-1.7.10.4
-
