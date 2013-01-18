@@ -1,8 +1,8 @@
-konsole (4:4.9.98-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
 
   * New upstream release candidate
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 17 Jan 2013 10:10:45 +0000
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 15:48:29 +0000
 
 konsole (4:4.9.97-0ubuntu1) raring; urgency=low
 
