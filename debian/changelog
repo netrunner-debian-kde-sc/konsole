@@ -1,3 +1,9 @@
+konsole (4:4.10.0-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 31 Jan 2013 11:32:10 +0530
+
 konsole (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
 
   * New upstream release candidate
