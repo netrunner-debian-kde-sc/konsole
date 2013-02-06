@@ -1,4 +1,4 @@
-konsole (4:4.10.0-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
 
   [ Rohan Garg ]
   * New upstream release
@@ -6,7 +6,7 @@ konsole (4:4.10.0-0ubuntu1) UNRELEASED; urgency=low
   [ Philip Muškovac ]
   * Update konsole.install and sort it
 
- -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 31 Jan 2013 11:32:10 +0530
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 12:00:15 +0000
 
 konsole (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
 
