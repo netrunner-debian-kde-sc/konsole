@@ -1,0 +1,37 @@
+Index: konsole/src/TerminalDisplay.cpp
+===================================================================
+--- konsole.orig/src/TerminalDisplay.cpp	2013-02-18 12:18:34.531454381 +0100
++++ konsole/src/TerminalDisplay.cpp	2013-02-18 12:20:46.362113452 +0100
+@@ -707,6 +707,13 @@
+     }
+     else
+     {
++		// Avoid fonts vertical displacement.
++
++		// See bug 280896 for more info
++		int flags = 0;
++#if QT_VERSION >= 0x040800
++		flags |= Qt::AlignBottom;
++#endif
+         // Force using LTR as the document layout for the terminal area, because
+         // there is no use cases for RTL emulator and RTL terminal application.
+         //
+@@ -721,16 +728,11 @@
+         //
+         // This was discussed in: http://lists.kde.org/?t=120552223600002&r=1&w=2
+         if (_bidiEnabled) {
+-            painter.drawText(rect, 0, text);
++            painter.drawText(rect, flags, text);
+         }
+         else
+         {
+-            // See bug 280896 for more info
+-#if QT_VERSION >= 0x040800
+-            painter.drawText(rect, Qt::AlignBottom, LTR_OVERRIDE_CHAR + text);
+-#else
+-            painter.drawText(rect, 0, LTR_OVERRIDE_CHAR + text);
+-#endif
++            painter.drawText(rect, flags, LTR_OVERRIDE_CHAR + text);
+         }
+     }
+ }
