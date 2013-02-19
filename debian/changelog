@@ -12,6 +12,9 @@ konsole (4:4.10.0-0r0) UNRELEASED; urgency=low
   * Bump build depends on other KDE SC components to 4:4.9.
   * Update installed files.
 
+  [ Josep Febrer ]
+  * Refresh patch debian-T-addition.diff.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Jan 2013 23:49:28 +0100
 
 konsole (4:4.8.4-2) unstable; urgency=low
