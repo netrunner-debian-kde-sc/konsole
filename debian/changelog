@@ -14,6 +14,7 @@ konsole (4:4.10.0-0r0) UNRELEASED; urgency=low
   * Refresh patch debian-T-addition.diff.
   * Bump kde-sc-dev-latest build dependency to version 4:4.10.0.
   * Bump kdelibs5-dev and libkonq5-dev to 4:4.10.
+  * Update installed files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Jan 2013 23:49:28 +0100
 
