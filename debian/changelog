@@ -1,3 +1,13 @@
+konsole (4:4.8.4-4) UNRELEASED; urgency=low
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * Add avoid-chdir-home.patch, reverts the chdir $HOME fallback.
+    (Closes: #586030)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Feb 2013 16:00:49 +0100
+
 konsole (4:4.8.4-3) unstable; urgency=low
 
   * Team upload.

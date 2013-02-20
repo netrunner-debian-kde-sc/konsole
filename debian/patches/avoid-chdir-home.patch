@@ -1,0 +1,26 @@
+Author: Jekyll Wu <adaptee@gmail.com>
+Date:   Wed Oct 3 16:45:55 2012 +0800
+
+    Remove the hack of resetting working directory to $HOME
+    
+    That hack is added due to the the "single process" model used by konsole.
+    However, That hack seems to make the thing more confusing as reflected in bug
+    302903
+    
+    So here is a known issue: if you set konsole as the terminal emulator
+    used in pcmanfm, pressing F4 twice in different folder will open two
+    konsole window in the same folder.
+
+Index: konsole/src/Session.cpp
+===================================================================
+--- konsole.orig/src/Session.cpp	2013-02-20 16:05:22.075301582 +0100
++++ konsole/src/Session.cpp	2013-02-20 16:07:14.862690867 +0100
+@@ -470,7 +470,7 @@
+     if (!_initialWorkingDir.isEmpty())
+         _shellProcess->setInitialWorkingDirectory(_initialWorkingDir);
+     else
+-        _shellProcess->setInitialWorkingDirectory(QDir::homePath());
++        _shellProcess->setInitialWorkingDirectory(QDir::currentPath());
+ 
+     _shellProcess->setFlowControlEnabled(_flowControl);
+     _shellProcess->setEraseChar(_emulation->eraseChar());
