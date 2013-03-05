@@ -1,8 +1,8 @@
-konsole (4:4.10.1-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
 
   * New upstream bugfix release
 
- -- Philip Muškovac <yofel@kubuntu.org>  Fri, 01 Mar 2013 21:40:42 +0100
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 16:35:14 +0000
 
 konsole (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
 
