@@ -1,8 +1,9 @@
-konsole (4:4.10.0-0r0) UNRELEASED; urgency=low
+konsole (4:4.10.1-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
 
   [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to version 4:4.10.1.
   * Update patches:
     - drop one_profile_per_window.diff, problem solved upstream.
     - drop upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch,
@@ -12,7 +13,6 @@ konsole (4:4.10.0-0r0) UNRELEASED; urgency=low
 
   [ Josep Febrer ]
   * Refresh patch debian-T-addition.diff.
-  * Bump kde-sc-dev-latest build dependency to version 4:4.10.0.
   * Bump kdelibs5-dev and libkonq5-dev to 4:4.10.
   * Update installed files.
   * Pass -DKDE4_BUILD_TESTS=false to cmake in order to keep the tests disabled.
