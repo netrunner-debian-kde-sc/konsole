@@ -10,6 +10,7 @@ konsole (4:4.10.1-0r0) UNRELEASED; urgency=low
       no longer needed.
     - refresh debian-T-addition.diff.
   * Update installed files.
+  * Add a lintian override for no-symbols-control-file.
 
   [ Josep Febrer ]
   * Refresh patch debian-T-addition.diff.
