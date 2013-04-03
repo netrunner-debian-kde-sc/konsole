@@ -1,6 +1,1 @@
-one_profile_per_window.diff
 debian-T-addition.diff
-upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch
-avoid-lineSpacing.diff
-drawText-alignBottom.diff
-avoid-chdir-home.patch
