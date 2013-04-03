@@ -1,3 +1,4 @@
+Index: konsole/src/main.cpp
 --- a/src/main.cpp
 +++ b/src/main.cpp
 @@ -184,6 +184,7 @@ void fillCommandLineOptions(KCmdLineOpti
