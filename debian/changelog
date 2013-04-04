@@ -1,3 +1,9 @@
+konsole (4:4.10.2-2) experimental; urgency=low
+
+  * Fixup uploaders field
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 04 Apr 2013 07:13:22 +0000
+
 konsole (4:4.10.2-1) experimental; urgency=low
 
   * New upstream release.
