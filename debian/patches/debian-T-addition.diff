@@ -1,12 +1,11 @@
-Index: konsole-4.8.80/src/main.cpp
-===================================================================
---- konsole-4.8.80.orig/src/main.cpp	2012-05-24 08:12:37.000000000 +0100
-+++ konsole-4.8.80/src/main.cpp	2012-06-06 14:30:31.999789567 +0100
-@@ -176,6 +176,7 @@
-     options.add("list-profile-properties",
-                 ki18n("List all the profile properties names and their type"
+Index: konsole/src/main.cpp
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -184,6 +184,7 @@ void fillCommandLineOptions(KCmdLineOpti
                        " (for use with -p)"));
-+    options.add("T <value>", ki18n("Debian policy compatibility, not used"));
      options.add("p <property=value>",
                  ki18n("Change the value of a profile property."));
++    options.add("T <value>", ki18n("Debian policy compatibility, not used"));
      options.add("!e <cmd>",
+                 ki18n("Command to execute. This option will catch all following"
+                       " arguments, so use it as the last option."));
