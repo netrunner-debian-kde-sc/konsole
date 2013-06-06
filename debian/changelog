@@ -1,8 +1,8 @@
-konsole (4:4.10.4-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
 
   * New upstream bugfix release
 
- -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 01 Jun 2013 13:48:11 +0100
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 07 Jun 2013 00:39:06 +0100
 
 konsole (4:4.10.3-0ubuntu1) saucy; urgency=low
 
