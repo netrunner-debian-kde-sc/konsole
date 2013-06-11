@@ -1,6 +1,7 @@
 konsole (4:4.10.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Bump debhelper build-dep and compat to 9.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 11 Jun 2013 23:40:40 +0200
 
