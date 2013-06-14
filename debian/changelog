@@ -1,4 +1,4 @@
-konsole (4:4.10.4-1) UNRELEASED; urgency=low
+konsole (4:4.10.4-1) experimental; urgency=low
 
   * New upstream release.
   * Bump debhelper build-dep and compat to 9.
@@ -6,7 +6,7 @@ konsole (4:4.10.4-1) UNRELEASED; urgency=low
   * Update vcs fields.
   * Add myself to uploaders.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 11 Jun 2013 23:40:40 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 14:07:32 +0200
 
 konsole (4:4.10.2-2) experimental; urgency=low
 
