@@ -11,6 +11,7 @@ usr/share/kde4/apps/kconf_update/konsole-2.10.0-remove-menuindex-from-profiles.s
 usr/share/kde4/apps/kconf_update/konsole-2.9.0-colorscheme-bold-key.sh
 usr/share/kde4/apps/kconf_update/konsole-2.9.0-global-options.sh
 usr/share/kde4/apps/kconf_update/konsole.upd
+usr/share/kde4/apps/kconf_update/konsole_remove_background_mode.upd
 usr/share/kde4/apps/konsole/BlackOnLightYellow.colorscheme
 usr/share/kde4/apps/konsole/BlackOnRandomLight.colorscheme
 usr/share/kde4/apps/konsole/BlackOnWhite.colorscheme
