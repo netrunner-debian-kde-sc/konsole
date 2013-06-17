@@ -1,6 +1,10 @@
 konsole (4:4.10.80-0ubuntu1) UNRELEASED; urgency=low
 
+  [ Rohan Garg ]
   * New upstream release
+
+  [ Philip Muškovac ]
+  * Refresh debian-T-addition.diff 
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 13 Jun 2013 09:15:28 +0100
 
