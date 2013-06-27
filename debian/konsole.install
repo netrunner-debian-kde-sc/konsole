@@ -5,6 +5,7 @@ usr/lib/libkdeinit4_konsole.so
 usr/lib/libkonsoleprivate.so
 usr/share/applications/kde4/konsole.desktop
 usr/share/doc/kde/HTML/en/konsole/common
+usr/share/doc/kde/HTML/en/konsole/draganddrop-contextmenu.png
 usr/share/doc/kde/HTML/en/konsole/index.cache.bz2
 usr/share/doc/kde/HTML/en/konsole/index.docbook
 usr/share/kde4/apps/kconf_update/konsole-2.10.0-remove-menuindex-from-profiles.sh
