@@ -1,3 +1,9 @@
+konsole (4:4.10.90-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Thu, 27 Jun 2013 02:57:22 +0200
+
 konsole (4:4.10.80-0ubuntu1) saucy; urgency=low
 
   [ Rohan Garg ]
