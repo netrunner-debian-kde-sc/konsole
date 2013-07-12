@@ -1,8 +1,8 @@
-konsole (4:4.10.5-1) UNRELEASED; urgency=low
+konsole (4:4.10.5-1) unstable; urgency=low
 
   * New upstream release.
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 11 Jul 2013 09:50:03 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 16:25:28 +0200
 
 konsole (4:4.10.4-1) experimental; urgency=low
 
