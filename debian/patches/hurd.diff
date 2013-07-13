@@ -1,0 +1,19 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Quick fix to compile konsole on Hurd
+ Temporarly define MAXPATHLEN if not defined already (e.g. on Hurd).
+Last-Update: 2013-07-13
+Forwarded: not-needed
+
+--- a/src/ProcessInfo.cpp
++++ b/src/ProcessInfo.cpp
+@@ -67,6 +67,10 @@
+ #   endif
+ #endif
+ 
++#ifndef MAXPATHLEN
++#define MAXPATHLEN 4096
++#endif
++
+ using namespace Konsole;
+ 
+ ProcessInfo::ProcessInfo(int aPid , bool enableEnvironmentRead)
