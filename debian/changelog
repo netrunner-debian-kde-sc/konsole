@@ -1,9 +1,9 @@
-konsole (4:4.10.5-2) UNRELEASED; urgency=low
+konsole (4:4.10.5-2) unstable; urgency=low
 
-  [ Pino Toscano ]
+  * Team upload.
   * Fix build failure on Hurd; patch hurd.diff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 13 Jul 2013 18:53:49 +0200
+ -- Pino Toscano <pino@debian.org>  Tue, 16 Jul 2013 15:40:20 +0200
 
 konsole (4:4.10.5-1) unstable; urgency=low
 
