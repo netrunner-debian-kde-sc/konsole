@@ -1,11 +1,12 @@
 Index: konsole/src/main.cpp
---- a/src/main.cpp
-+++ b/src/main.cpp
-@@ -184,6 +184,7 @@ void fillCommandLineOptions(KCmdLineOpti
+===================================================================
+--- konsole.orig/src/main.cpp	2013-09-26 13:02:46.456857435 +0000
++++ konsole/src/main.cpp	2013-09-26 13:03:25.331385762 +0000
+@@ -184,6 +184,7 @@
                        " (for use with -p)"));
      options.add("p <property=value>",
-                 ki18n("Change the value of a profile property."));
+                 ki18nc("@info:shell", "Change the value of a profile property."));
 +    options.add("T <value>", ki18n("Debian policy compatibility, not used"));
      options.add("!e <cmd>",
-                 ki18n("Command to execute. This option will catch all following"
+                 ki18nc("@info:shell", "Command to execute. This option will catch all following"
                        " arguments, so use it as the last option."));

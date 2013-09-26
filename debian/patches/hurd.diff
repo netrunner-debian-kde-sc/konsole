@@ -4,9 +4,11 @@ Description: Quick fix to compile konsole on Hurd
 Last-Update: 2013-07-13
 Forwarded: not-needed
 
---- a/src/ProcessInfo.cpp
-+++ b/src/ProcessInfo.cpp
-@@ -67,6 +67,10 @@
+Index: konsole/src/ProcessInfo.cpp
+===================================================================
+--- konsole.orig/src/ProcessInfo.cpp	2013-09-26 13:03:44.354665475 +0000
++++ konsole/src/ProcessInfo.cpp	2013-09-26 13:03:44.350665627 +0000
+@@ -61,6 +61,10 @@
  #   endif
  #endif
  
