@@ -4,12 +4,11 @@ usr/lib/kde4/libkonsolepart.so
 usr/lib/libkdeinit4_konsole.so
 usr/lib/libkonsoleprivate.so
 usr/share/applications/kde4/konsole.desktop
-usr/share/doc/kde/HTML/en/konsole/common
-usr/share/doc/kde/HTML/en/konsole/index.cache.bz2
-usr/share/doc/kde/HTML/en/konsole/index.docbook
+usr/share/doc/kde/HTML/*/konsole/
 usr/share/kde4/apps/kconf_update/konsole-2.10.0-remove-menuindex-from-profiles.sh
 usr/share/kde4/apps/kconf_update/konsole-2.9.0-colorscheme-bold-key.sh
 usr/share/kde4/apps/kconf_update/konsole-2.9.0-global-options.sh
+usr/share/kde4/apps/kconf_update/konsole_remove_background_mode.upd
 usr/share/kde4/apps/kconf_update/konsole.upd
 usr/share/kde4/apps/konsole/BlackOnLightYellow.colorscheme
 usr/share/kde4/apps/konsole/BlackOnRandomLight.colorscheme
