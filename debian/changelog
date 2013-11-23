@@ -1,4 +1,4 @@
-konsole (4:4.11.80-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.11.80-0ubuntu1) trusty; urgency=low
 
   [ Rohan Garg ]
   * New upstream beta release
@@ -6,7 +6,7 @@ konsole (4:4.11.80-0ubuntu1) UNRELEASED; urgency=low
   [ Jacky Alciné ]
   * Update konsole.install with missing color scheme.
 
- -- Jacky Alciné <me@jalcine.me>  Thu, 14 Nov 2013 14:27:56 -0500
+ -- Jacky Alciné <me@jalcine.me>  Sat, 23 Nov 2013 17:46:20 +0100
 
 konsole (4:4.11.2-0ubuntu1) saucy; urgency=low
 
