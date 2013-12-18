@@ -1,8 +1,8 @@
-konsole (4:4.12.0-0ubuntu1) UNRELEASED; urgency=low
+konsole (4:4.12.0-0ubuntu1) trusty; urgency=low
 
   * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 12 Dec 2013 16:14:26 +0000
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:18:28 +0000
 
 konsole (4:4.11.97-0ubuntu1) trusty; urgency=low
 
