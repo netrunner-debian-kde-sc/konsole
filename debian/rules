@@ -3,7 +3,7 @@
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
 override_dh_auto_configure:
-	$(overridden_command) -- -DKDE4_BUILD_TESTS=false
+	$(overridden_command)
 
 .PHONY: override_dh_auto_test
 
