@@ -21,6 +21,7 @@ usr/share/kde4/apps/konsole/README.KeyTab
 usr/share/kde4/apps/konsole/RedOnBlack.colorscheme
 usr/share/kde4/apps/konsole/Shell.profile
 usr/share/kde4/apps/konsole/Solarized.colorscheme
+usr/share/kde4/apps/konsole/SolarizedLight.colorscheme
 usr/share/kde4/apps/konsole/WhiteOnBlack.colorscheme
 usr/share/kde4/apps/konsole/default.keytab
 usr/share/kde4/apps/konsole/konsole.notifyrc
