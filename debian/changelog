@@ -1,4 +1,4 @@
-konsole (4:4.12.2-1) UNRELEASED; urgency=medium
+konsole (4:4.12.2-1) experimental; urgency=medium
 
   * Build the unit tests.
   * Add autopkgtests.
@@ -7,7 +7,7 @@ konsole (4:4.12.2-1) UNRELEASED; urgency=medium
   * Update install files.
   * Bump kde-sc-dev-latest build dependency.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 23:59:02 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:36 +0100
 
 konsole (4:4.11.3-1) unstable; urgency=low
 
