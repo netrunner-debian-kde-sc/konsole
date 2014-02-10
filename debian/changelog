@@ -5,6 +5,7 @@ konsole (4:4.12.2-1) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.5, no changes needed.
   * New upstream release.
   * Update install files.
+  * Bump kde-sc-dev-latest build dependency.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 23:59:02 +0100
 
