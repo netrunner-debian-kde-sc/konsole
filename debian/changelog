@@ -1,5 +1,7 @@
 konsole (4:4.12.2-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Drop patch hurd.diff, obsolete in konsole >= 4.12.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2014 08:07:33 +0100
 
