@@ -1,8 +1,8 @@
-konsole (4:4.12.3-0ubuntu1) UNRELEASED; urgency=medium
+konsole (4:4.12.3-0ubuntu1) trusty; urgency=medium
 
   * New upstream bugfix release
 
- -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 28 Feb 2014 21:00:34 +0100
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 20:57:08 +0100
 
 konsole (4:4.12.2-0ubuntu1) trusty; urgency=medium
 
