@@ -1,6 +1,10 @@
 konsole (4:4.12.80-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Jonathan Riddell ]
   * new upstream alpha release
+
+  [ Rohan Garg ]
+  * Update install file
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Mar 2014 14:15:44 +0000
 
