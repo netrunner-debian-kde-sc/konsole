@@ -8,7 +8,7 @@ Uploaders: Sune Vuorela <sune@debian.org>,
  Modestas Vainius <modax@debian.org>
 Build-Depends: kde-sc-dev-latest (>= 4:4.10.1),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.12.80), libkonq5-dev (>= 4:4.12.80), libphonon-dev (>= 4:4.3.0),
+ kdelibs5-dev (>= 4:4.12.90), libkonq5-dev (>= 4:4.12.90), libphonon-dev (>= 4:4.3.0),
  libxkbfile-dev
 Standards-Version: 3.9.3
 Homepage: http://www.kde.org/
