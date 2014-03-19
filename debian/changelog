@@ -1,4 +1,4 @@
-konsole (4:4.12.90-0ubuntu1) UNRELEASED; urgency=medium
+konsole (4:4.12.90-0ubuntu1) trusty; urgency=medium
 
   [ Rohan Garg ]
   * Update install file
@@ -6,7 +6,7 @@ konsole (4:4.12.90-0ubuntu1) UNRELEASED; urgency=medium
   [ Jonathan Riddell ]
   * New upstream beta release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 14 Mar 2014 00:14:49 +0000
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 11:07:26 +0000
 
 konsole (4:4.12.3-0ubuntu1) trusty; urgency=medium
 
