@@ -1,3 +1,9 @@
+konsole (4:4.12.95-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 20 Mar 2014 20:34:30 +0100
+
 konsole (4:4.12.90-0ubuntu1) trusty; urgency=medium
 
   [ Rohan Garg ]
