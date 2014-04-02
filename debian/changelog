@@ -1,8 +1,8 @@
-konsole (4:4.12.97-0ubuntu1) UNRELEASED; urgency=medium
+konsole (4:4.12.97-0ubuntu1) trusty; urgency=medium
 
   * New upstream release candidate
 
- -- Philip Muškovac <yofel@kubuntu.org>  Fri, 28 Mar 2014 02:08:13 +0100
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:35:18 +0200
 
 konsole (4:4.12.95-0ubuntu1) trusty; urgency=medium
 
