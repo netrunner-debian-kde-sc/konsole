@@ -1,8 +1,8 @@
-konsole (4:4.13.1-1) UNRELEASED; urgency=medium
+konsole (4:4.13.1-1~) UNRELEASED; urgency=medium
 
   * New upstream release.
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 17 May 2014 22:57:46 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 23 May 2014 13:08:10 +0200
 
 konsole (4:4.12.4-1) unstable; urgency=medium
 
