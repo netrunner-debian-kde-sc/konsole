@@ -31,5 +31,6 @@ usr/share/kde4/apps/konsole/partui.rc
 usr/share/kde4/apps/konsole/sessionui.rc
 usr/share/kde4/apps/konsole/solaris.keytab
 usr/share/kde4/services/ServiceMenus/konsolehere.desktop
+usr/share/kde4/services/ServiceMenus/konsolerun.desktop
 usr/share/kde4/services/konsolepart.desktop
 usr/share/kde4/servicetypes/terminalemulator.desktop

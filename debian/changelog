@@ -1,6 +1,7 @@
 konsole (4:4.13.1-1~) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 23 May 2014 13:08:10 +0200
 
