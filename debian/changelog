@@ -1,3 +1,198 @@
+konsole (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:41:55 +0100
+
+konsole (4:4.13.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update install files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 26 May 2014 13:32:55 +0200
+
+konsole (4:4.12.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:25:35 +0200
+
+konsole (4:4.12.3-1) experimental; urgency=medium
+
+  [ Pino Toscano ]
+  * Drop patch hurd.diff, obsolete in konsole >= 4.12.
+
+  [ Maximiliano Curia ]
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Mar 2014 00:06:34 +0100
+
+konsole (4:4.12.2-1) experimental; urgency=medium
+
+  * Build the unit tests.
+  * Add autopkgtests.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Update install files.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:36 +0100
+
+konsole (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 08 Nov 2013 14:07:19 +0100
+
+konsole (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Refresh patches.
+  * Update install files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 18:18:17 +0200
+
+konsole (4:4.10.5-2) unstable; urgency=low
+
+  * Team upload.
+  * Fix build failure on Hurd; patch hurd.diff.
+
+ -- Pino Toscano <pino@debian.org>  Tue, 16 Jul 2013 15:40:20 +0200
+
+konsole (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 16:25:28 +0200
+
+konsole (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Update vcs fields.
+  * Add myself to uploaders.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 14:07:32 +0200
+
+konsole (4:4.10.2-2) experimental; urgency=low
+
+  * Fixup uploaders field
+
+ -- Sune Vuorela <sune@debian.org>  Thu, 04 Apr 2013 07:13:22 +0000
+
+konsole (4:4.10.2-1) experimental; urgency=low
+
+  * New upstream release.
+    - Fixes homedir fallback. (Closes: #586030)
+
+  [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to version 4:4.10.1.
+  * Update patches:
+    - drop one_profile_per_window.diff, problem solved upstream.
+    - drop upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch,
+      no longer needed.
+    - refresh debian-T-addition.diff.
+  * Update installed files.
+  * Add a lintian override for no-symbols-control-file.
+
+  [ Josep Febrer ]
+  * Refresh patch debian-T-addition.diff.
+  * Bump kdelibs5-dev and libkonq5-dev to 4:4.10.
+  * Update installed files.
+  * Pass -DKDE4_BUILD_TESTS=false to cmake in order to keep the tests disabled.
+
+  [ Sune Vuorela ]
+  * Update uploaders
+
+ -- Sune Vuorela <sune@debian.org>  Wed, 03 Apr 2013 18:25:01 +0000
+
+konsole (4:4.8.4-3) unstable; urgency=low
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * Reduces vertical misalignment (Closes: #672554)
+    - Add drawText-alignBottom.diff, this adds alignBottom flag to the
+      bidirectional renderer.
+    - Add avoid-lineSpacing.diff, this reverts the added linespacing for the
+      unidirectional renderer.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 19 Feb 2013 12:44:09 +0100
+
+konsole (4:4.8.4-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * konsole-dbg now recommends kdelibs5-dbg.
+
+  [ Pino Toscano ]
+  * Backport upstream commit e48cee6cca742a5bdb3daf6fa0b7c76073217faa to avoid
+    looking up executables when an absolute path is specified; patch
+    upstream_No-need-to-lookup-executable-PATH-when-absolute-path.patch.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 08 Dec 2012 13:18:32 +0100
+
+konsole (4:4.8.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Team upload.
+
+  [ Eshat Cakar ]
+  * Add watch file.
+  * Bump kde-sc-dev-latest build dependency to version 4:4.8.4.
+  * Fix lintian maintainer-script-without-set-e message.
+
+  [ José Manuel Santamaría Lema ]
+  * Add one_profile_per_window.diff, this allows one to open new tabs
+    with ctrl+shift+t in a remote shell.
+
+ -- Modestas Vainius <modax@debian.org>  Sun, 10 Jun 2012 15:13:29 +0300
+
+konsole (4:4.8.3-1) experimental; urgency=low
+
+  * New upstream release:
+    - konsole does not require a restart to use newly installed fonts.
+      (Closes: #457218)
+    - konsole does not fail to draw bright colors in screen when TERM is set
+      to xterm-256colors. (Closes: #531752)
+    - "Show in menu" works even with languages than English. (Closes: #576148)
+    - konsole correctly sets the number of terminal lines and columns.
+      (Closes: #606617)
+  * Team upload.
+
+  [ Eshat Cakar ]
+  * Bump kde-sc-dev-latest build dependency to version 4:4.8.3.
+  * Bump Standards-Version to 3.9.3, no changes needed.
+
+  [ Modestas Vainius ]
+  * Add myself to Uploaders.
+
+ -- Modestas Vainius <modax@debian.org>  Sun, 27 May 2012 15:44:15 +0300
+
+konsole (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 06 Mar 2012 11:47:50 +0100
+
+
+konsole (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:36:53 +0100
+
+konsole (4:4.7.2-1) experimental; urgency=low
+
+  [ Eshat Cakar ]
+  * Initial release. Start from the Ubuntu packaging, thanks!
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:46:16 -0300
+
 konsole (4:4.13.0-0ubuntu1) trusty; urgency=medium
 
   * New upstream KDE Software Compilation release

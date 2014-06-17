@@ -4,22 +4,28 @@ Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>,
- Eshat Cakar <info@eshat.de>,
- Modestas Vainius <modax@debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.10.1),
- cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.13.0), libkonq5-dev (>= 4:4.13.0), libphonon-dev (>= 4:4.3.0),
- libxkbfile-dev
-Standards-Version: 3.9.3
+           Eshat Cakar <info@eshat.de>,
+           Modestas Vainius <modax@debian.org>,
+           Maximiliano Curia <maxy@debian.org>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               kde-sc-dev-latest (>= 4:4.12),
+               kdelibs5-dev (>= 4:4.11),
+               libkonq5-dev (>= 4:4.11),
+               libphonon-dev (>= 4:4.3.0),
+               libxkbfile-dev,
+               pkg-kde-tools (>= 0.12)
+Standards-Version: 3.9.5
+XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
-X-Debian-Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/konsole.git
-X-Debian-Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/konsole.git
+X-Debian-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/konsole.git
+X-Debian-Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/konsole.git
 
 Package: konsole
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: x-terminal-emulator
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
@@ -34,7 +40,7 @@ Package: konsole-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, konsole (= ${binary:Version})
+Depends: konsole (= ${binary:Version}), ${misc:Depends}
 Breaks: kdebase-dbg (<< 4:4.6.80)
 Replaces: kdebase-dbg (<< 4:4.6.80)
 Recommends: kdelibs5-dbg
