@@ -1,4 +1,4 @@
-konsole: package-name-doesnt-match-sonames libkonsoleprivate
-konsole: shlib-without-versioned-soname usr/lib/libkonsoleprivate.so libkonsoleprivate.so
-konsole: postinst-must-call-ldconfig usr/lib/libkonsoleprivate.so
-konsole: no-symbols-control-file usr/lib/libkonsoleprivate.so
+konsole: package-name-doesnt-match-sonames libkdeinit5-konsole libkonsoleprivate2
+konsole: binary-without-manpage usr/bin/konsole
+konsole: binary-without-manpage usr/bin/konsoleprofile
+konsole: shlib-without-versioned-soname usr/lib/*/libkdeinit5_konsole.so libkdeinit5_konsole.so

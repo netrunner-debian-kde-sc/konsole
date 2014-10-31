@@ -9,12 +9,29 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake,
                debhelper (>= 9),
-               kde-sc-dev-latest (>= 4:4.12),
-               kdelibs5-dev (>= 4:4.11),
-               libkonq5-dev (>= 4:4.11),
-               libphonon-dev (>= 4:4.3.0),
-               libxkbfile-dev,
-               pkg-kde-tools (>= 0.12)
+               extra-cmake-modules (>= 1.3.0~),
+               pkg-kde-tools (>= 0.15.15ubuntu1~),
+               qtbase5-dev,
+               libkf5bookmarks-dev,
+               libkf5completion-dev,
+               libkf5config-dev,
+               libkf5configwidgets-dev,
+               libkf5coreaddons-dev,
+               libkf5guiaddons-dev,
+               libkf5i18n-dev,
+               libkf5iconthemes-dev,
+               kinit-dev,
+               libkf5kdelibs4support-dev,
+               kio-dev,
+               libkf5notifications-dev,
+               libkf5notifyconfig-dev,
+               libkf5parts-dev,
+               libkf5pty-dev,
+               libkf5service-dev,
+               libkf5textwidgets-dev,
+               libkf5widgetsaddons-dev,
+               libkf5windowsystem-dev,
+               libkf5xmlgui-dev
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
@@ -43,7 +60,6 @@ Priority: extra
 Depends: konsole (= ${binary:Version}), ${misc:Depends}
 Breaks: kdebase-dbg (<< 4:4.6.80)
 Replaces: kdebase-dbg (<< 4:4.6.80)
-Recommends: kdelibs5-dbg
 Description: debugging symbols for the KDE X terminal emulator
  This package contains debugging files used to investigate problems with
  binaries included in the KDE X terminal emulator.
