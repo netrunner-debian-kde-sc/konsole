@@ -1,10 +1,21 @@
 #! /bin/sh
 
-set -e
+set -ex
+
+undivert() {
+    binary=$1
+    if [ -L ${binary} ]; then
+        rm ${binary}
+    fi
+    dpkg-divert --remove --package konsole5 --rename \
+        --divert ${binary}4 ${binary}
+}
 
 case "$1" in
     remove)
         update-alternatives --remove x-terminal-emulator /usr/bin/konsole
+        undivert "/usr/bin/konsole"
+        undivert "/usr/bin/konsoleprofile"
     ;;
 
     upgrade|deconfigure)

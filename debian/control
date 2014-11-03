@@ -38,10 +38,8 @@ XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/konsole.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/konsole.git
-X-Ubuntu-Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
-X-Ubuntu-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
 
-Package: konsole
+Package: konsole5
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: x-terminal-emulator
@@ -54,11 +52,11 @@ Description: X terminal emulator
  .
  This package is part of the KDE base applications module.
 
-Package: konsole-dbg
+Package: konsole5-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: konsole (= ${binary:Version}), ${misc:Depends}
+Depends: konsole5 (= ${binary:Version}), ${misc:Depends}
 Breaks: kdebase-dbg (<< 4:4.6.80)
 Replaces: kdebase-dbg (<< 4:4.6.80)
 Description: debugging symbols for the KDE X terminal emulator
