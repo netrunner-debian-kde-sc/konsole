@@ -1,3 +1,9 @@
+konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 28 Nov 2014 19:23:42 +0100
+
 konsole (4:4.14.2-1) unstable; urgency=medium
 
   * New upstream release (4.14.2).
@@ -21,6 +27,65 @@ konsole (4:4.13.3-1) unstable; urgency=medium
   * New upstream release.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 31 Jul 2014 14:15:49 +0200
+
+konsole (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:41:55 +0100
+
+konsole (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release
+
+  [ Harald Sitter ]
+  * Split kpart into its own package
+    + With konsole5 on the horizon we need to enable the installation of
+      the konsole4 kpart alongside the konsole5 package to ensure that
+      4.x applications relying on the kpart still have access to it.
+    + New package konsole4-kpart
+    + konsole depends binary:Version of konsole4-kpart
+    + konsole4-kpart contains libkonsolepart.so and libkonsoleprivate.so
+      along with the relevant kpart desktop file.
+      All other files remain in konsole package.
+    + konsole4-kpart breaks and replaces old versions of konsole
+    + Once the konsole frameworks 5 port gets released this source should then
+      be renamed to konsole4 and loose the konsole package (i.e. only produce
+      konsole4-kpart)
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 05:53:49 -0700
+
+konsole (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 17:26:14 +0200
+
+konsole (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:18:06 +0200
+
+konsole (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 17:00:57 +0200
+
+konsole (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 18:27:45 +0200
+
+konsole (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:21:14 +0200
 
 konsole (4:4.13.2-0ubuntu1) utopic; urgency=medium
 
@@ -331,7 +396,7 @@ konsole (4:4.10.90-0ubuntu1) saucy; urgency=low
   * New upstream beta release
 
   [ Philip Muškovac ]
-  * Add doc picture to konsole.install
+  * Add doc picture to konsole.install 
 
  -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:19:44 +0100
 
@@ -341,8 +406,8 @@ konsole (4:4.10.80-0ubuntu1) saucy; urgency=low
   * New upstream release
 
   [ Philip Muškovac ]
-  * Refresh debian-T-addition.diff
-  * Update konsole.install
+  * Refresh debian-T-addition.diff 
+  * Update konsole.install 
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:28:57 +0100
 
@@ -569,7 +634,7 @@ konsole (4:4.8.2-0ubuntu1) precise; urgency=low
 
 konsole (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release
+  * New upstream release 
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:39:13 +0100
 
@@ -635,7 +700,7 @@ konsole (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
   * New upstream release (LP: #872506)
 
   [ Philip Muškovac ]
-  * Add libx11-dev to build-deps so XKB is found.
+  * Add libx11-dev to build-deps so XKB is found. 
 
  -- Philip Muškovac <yofel@kubuntu.org>  Tue, 18 Oct 2011 07:28:12 +0200
 
@@ -664,8 +729,9 @@ konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
 konsole (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
 
-  * New upstream release candidate
+  * New upstream release candidate 
     - update for split packaging
   * Repack upstream tar to include COPYING files
 
  -- Philip Muškovac <yofel@kubuntu.org>  Fri, 08 Jul 2011 12:41:10 +0200
+

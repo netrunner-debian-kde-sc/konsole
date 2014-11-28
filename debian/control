@@ -1,7 +1,7 @@
 Source: konsole
 Section: kde
 Priority: optional
-Maintainer: Debian/Ubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Debian/Kubuntu/Ubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 X-Ubuntu-Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 Uploaders: Sune Vuorela <sune@debian.org>,
            Eshat Cakar <info@eshat.de>,
@@ -9,12 +9,15 @@ Uploaders: Sune Vuorela <sune@debian.org>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake,
                debhelper (>= 9),
-               kde-sc-dev-latest (>= 4:4.12),
-               kdelibs5-dev (>= 4:4.11),
-               libkonq5-dev (>= 4:4.11),
-               libphonon-dev (>= 4:4.3.0),
+               kdoctools-dev,
+               kinit-dev,
+               libkf5kdelibs4support-dev,
+               libkf5notifyconfig-dev,
+               libkf5parts-dev,
+               libkf5pty-dev,
                libxkbfile-dev,
-               pkg-kde-tools (>= 0.12)
+               pkg-kde-tools (>= 0.12),
+               qtscript5-dev
 Standards-Version: 3.9.5
 XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
