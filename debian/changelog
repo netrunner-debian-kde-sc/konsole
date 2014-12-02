@@ -8,6 +8,7 @@ konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
   [ Harald Sitter ]
   * Update lintian overrides
   * Do not recommend kdelibs5-dbg (it's a kde4 package)
+  * Complete build depends list
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 28 Nov 2014 19:23:42 +0100
 
