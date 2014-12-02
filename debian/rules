@@ -5,12 +5,7 @@ include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 override_dh_auto_configure:
 	$(overridden_command)
 
-override_dh_auto_install:
-	$(overridden_command)
-	mv debian/tmp/usr/bin/konsole debian/tmp/usr/bin/konsole5
-	mv debian/tmp/usr/bin/konsoleprofile debian/tmp/usr/bin/konsoleprofile5
+.PHONY: override_dh_auto_test
 
 override_dh_strip:
-	$(overridden_command) --dbg-package=konsole5-dbg
-
-.PHONY: override_dh_auto_test
+	$(overridden_command) --dbg-package=konsole-dbg
