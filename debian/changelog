@@ -9,6 +9,7 @@ konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
   * Update lintian overrides
   * Do not recommend kdelibs5-dbg (it's a kde4 package)
   * Complete build depends list
+  * Use wildcard in install file, we only have one binary package
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 28 Nov 2014 19:23:42 +0100
 
