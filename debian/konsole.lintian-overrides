@@ -1,0 +1,4 @@
+konsole: package-name-doesnt-match-sonames libkdeinit5-konsole libkonsoleprivate3
+konsole: shlib-without-versioned-soname usr/lib/*/libkdeinit5_konsole.so libkdeinit5_konsole.so
+konsole: binary-without-manpage usr/bin/konsole5
+konsole: binary-without-manpage usr/bin/konsoleprofile5
