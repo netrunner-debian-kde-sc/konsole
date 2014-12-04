@@ -1,5 +1,6 @@
-konsole5: package-name-doesnt-match-sonames libkdeinit5-konsole libkonsoleprivate3
+konsole5: package-name-doesnt-match-sonames libkdeinit5-konsole
+konsole5: shlib-without-versioned-soname usr/lib/*/libkdeinit5_konsole.so libkdeinit5_konsole.so
 konsole5: binary-without-manpage usr/bin/konsole5
 konsole5: binary-without-manpage usr/bin/konsoleprofile5
-konsole5: shlib-without-versioned-soname usr/lib/*/libkdeinit5_konsole.so libkdeinit5_konsole.so
+konsole5: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_konsole.so
 konsole5: desktop-command-not-in-package usr/share/applications/org.kde.konsole.desktop konsole
