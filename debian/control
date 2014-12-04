@@ -44,7 +44,7 @@ Depends: konsole-kpart (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: x-terminal-emulator
-Conflits: konsole5
+Conflicts: konsole5
 Replaces: konsole5
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
@@ -56,7 +56,7 @@ Description: X terminal emulator
 Package: konsole-kpart
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflits: konsole5
+Conflicts: konsole5
 Replaces: konsole5
 Description: Konsole plugin for Qt applications
  Konsole is a terminal emulator built on the KDE Platform. It can contain
