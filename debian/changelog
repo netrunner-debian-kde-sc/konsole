@@ -3,7 +3,6 @@ konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
   [ Jonathan Riddell ]
   * New upstream RC release
   * Merge with Debian, no changes
-   - removes the kpart splitting which is KDE 4 packaging only
 
   [ Harald Sitter ]
   * Update lintian overrides

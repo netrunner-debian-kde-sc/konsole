@@ -1,0 +1,2 @@
+usr/lib/*/libkonsoleprivate.so.*
+usr/lib/*/qt5/plugins/konsolepart.so
