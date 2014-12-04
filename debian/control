@@ -1,8 +1,7 @@
 Source: konsole
 Section: kde
 Priority: optional
-Maintainer: Debian/Kubuntu/Ubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-X-Ubuntu-Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>,
            Eshat Cakar <info@eshat.de>,
            Modestas Vainius <modax@debian.org>,
@@ -38,12 +37,10 @@ XS-Testsuite: autopkgtest
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-applications/konsole.git/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/konsole.git
-X-Ubuntu-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-applications/konsole.git/
-X-Ubuntu-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/konsole
 
 Package: konsole5
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, konsole
+Depends: ${misc:Depends}, ${shlibs:Depends}, konsole, konsole-kpart (= ${binary:Version})
 Provides: x-terminal-emulator
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
@@ -51,8 +48,16 @@ Description: X terminal emulator
  .
  Konsole supports powerful terminal features, such as customizable schemes,
  saved sessions, and output monitoring.
+
+Package: konsole-kpart
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Konsole plugin for Qt applications
+ Konsole is a terminal emulator built on the KDE Platform. It can contain
+ multiple terminal sessions inside one window using detachable tabs.
  .
- This package is part of the KDE base applications module.
+ Konsole supports powerful terminal features, such as customizable schemes,
+ saved sessions, and output monitoring.
 
 Package: konsole5-dbg
 Section: debug
