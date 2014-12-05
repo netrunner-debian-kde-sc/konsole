@@ -46,6 +46,10 @@ Depends: konsole-kpart (= ${binary:Version}),
 Provides: x-terminal-emulator
 Conflicts: konsole5
 Replaces: konsole5
+Breaks: kdevplatform (<< 1.7.0-2ubuntu2),
+        kile (<< 4:2.1.3-2ubuntu3),
+        krusader (<< 1:2.4.0~beta3-2ubuntu1),
+        yakuake (<< 2.9.9-1ubuntu1)
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
  multiple terminal sessions inside one window using detachable tabs.
