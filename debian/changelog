@@ -1,4 +1,4 @@
-konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
+konsole (4:14.11.97-0ubuntu1~ubuntu15.04~ppa3) vivid; urgency=medium
 
   [ Jonathan Riddell ]
   * New upstream RC release
@@ -10,7 +10,10 @@ konsole (4:14.11.97-0ubuntu1) UNRELEASED; urgency=medium
   * Complete build depends list
   * Use wildcard in install file, we only have one binary package
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 28 Nov 2014 19:23:42 +0100
+  [ Jonathan Riddell ]
+  * PPA build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Dec 2014 18:24:46 +0100
 
 konsole (4:4.14.2-1) unstable; urgency=medium
 
