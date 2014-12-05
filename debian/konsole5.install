@@ -1,4 +1,4 @@
-usr/share/
-usr/lib/*/libkdeinit5_konsole.so
-usr/bin/konsoleprofile5
 usr/bin/konsole5
+usr/bin/konsoleprofile5
+usr/lib/*/libkdeinit5_konsole.so
+usr/share/
