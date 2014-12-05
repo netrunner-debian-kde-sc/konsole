@@ -40,7 +40,10 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-applications/konsole.git
 
 Package: konsole5
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, konsole, konsole-kpart (= ${binary:Version})
+Depends: konsole,
+         konsole-kpart (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Provides: x-terminal-emulator
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
