@@ -3,15 +3,13 @@ konsole (4:14.11.97-0ubuntu1) vivid; urgency=medium
   [ Jonathan Riddell ]
   * New upstream RC release
   * Merge with Debian, no changes
+  * Update build-depends for KF5 version
 
   [ Harald Sitter ]
   * Update lintian overrides
   * Do not recommend kdelibs5-dbg (it's a kde4 package)
   * Complete build depends list
   * Use wildcard in install file, we only have one binary package
-
-  [ Jonathan Riddell ]
-  * PPA build
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Dec 2014 18:24:46 +0100
 
