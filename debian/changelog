@@ -1,3 +1,9 @@
+konsole (4:14.12.2-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 05 Feb 2015 21:24:09 +0000
+
 konsole (4:14.12.0-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
