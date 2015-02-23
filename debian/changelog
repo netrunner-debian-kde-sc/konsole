@@ -1,3 +1,9 @@
+konsole (4:14.12.2-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (14.12.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 23 Feb 2015 23:01:53 +0100
+
 konsole (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
@@ -417,7 +423,7 @@ konsole (4:4.10.90-0ubuntu1) saucy; urgency=low
   * New upstream beta release
 
   [ Philip Muškovac ]
-  * Add doc picture to konsole.install 
+  * Add doc picture to konsole.install
 
  -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:19:44 +0100
 
@@ -427,8 +433,8 @@ konsole (4:4.10.80-0ubuntu1) saucy; urgency=low
   * New upstream release
 
   [ Philip Muškovac ]
-  * Refresh debian-T-addition.diff 
-  * Update konsole.install 
+  * Refresh debian-T-addition.diff
+  * Update konsole.install
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:28:57 +0100
 
@@ -655,7 +661,7 @@ konsole (4:4.8.2-0ubuntu1) precise; urgency=low
 
 konsole (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:39:13 +0100
 
@@ -721,7 +727,7 @@ konsole (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
   * New upstream release (LP: #872506)
 
   [ Philip Muškovac ]
-  * Add libx11-dev to build-deps so XKB is found. 
+  * Add libx11-dev to build-deps so XKB is found.
 
  -- Philip Muškovac <yofel@kubuntu.org>  Tue, 18 Oct 2011 07:28:12 +0200
 
@@ -750,9 +756,8 @@ konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
 konsole (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
 
-  * New upstream release candidate 
+  * New upstream release candidate
     - update for split packaging
   * Repack upstream tar to include COPYING files
 
  -- Philip Muškovac <yofel@kubuntu.org>  Fri, 08 Jul 2011 12:41:10 +0200
-
