@@ -5,6 +5,7 @@ konsole (4:14.12.2-1~) UNRELEASED; urgency=medium
   * Update build dependencies to build against experimental and to
     follow cmake.
   * Update copyright information.
+  * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 23 Feb 2015 23:01:53 +0100
 

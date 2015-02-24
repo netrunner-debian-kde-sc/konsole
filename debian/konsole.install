@@ -1,4 +1,12 @@
 usr/bin/konsole
 usr/bin/konsoleprofile
 usr/lib/*/libkdeinit5_konsole.so
-usr/share/
+usr/share/applications/org.kde.konsole.desktop
+usr/share/doc/HTML/*/konsole/
+usr/share/knotifications5/konsole.notifyrc
+usr/share/konsole/
+usr/share/kservices5/ServiceMenus/konsolehere.desktop
+usr/share/kservices5/ServiceMenus/konsolerun.desktop
+usr/share/kservices5/konsolepart.desktop
+usr/share/kservicetypes5/terminalemulator.desktop
+usr/share/kxmlgui5/konsole/
