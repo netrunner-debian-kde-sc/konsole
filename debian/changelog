@@ -1,3 +1,9 @@
+konsole (4:14.12.2-0ubuntu2) vivid; urgency=medium
+
+  * Add upstream_control-space.diff to fix emacs use
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 02 Mar 2015 13:43:47 +0100
+
 konsole (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
