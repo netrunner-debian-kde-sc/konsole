@@ -1,3 +1,9 @@
+konsole (4:14.12.3-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 09 Mar 2015 10:49:08 -0700
+
 konsole (4:14.12.2-0ubuntu2) vivid; urgency=medium
 
   * Add upstream_control-space.diff to fix emacs use
