@@ -1,0 +1,33 @@
+Description: fix control-space in konsole
+ make emacs users happy
+Origin: upstream, https://git.reviewboard.kde.org/r/122711/
+Bug: https://bugs.kde.org/show_bug.cgi?id=341157
+Last-Update: 2015-03-05
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+diff --git a/src/KeyboardTranslator.cpp b/src/KeyboardTranslator.cpp
+index 5bdc62b..d0043c4 100644
+--- a/src/KeyboardTranslator.cpp
++++ b/src/KeyboardTranslator.cpp
+@@ -523,7 +523,7 @@ QByteArray KeyboardTranslator::Entry::unescape(const QByteArray& input) const
+             }
+ 
+             if (escapedChar)
+-                result.replace(i, charsToRemove, replacement);
++	         result.replace(i, charsToRemove, replacement, 1);
+         }
+     }
+ 
+diff --git a/src/Vt102Emulation.cpp b/src/Vt102Emulation.cpp
+index d0d60ce..1e6dbf6 100644
+--- a/src/Vt102Emulation.cpp
++++ b/src/Vt102Emulation.cpp
+@@ -1046,7 +1046,7 @@ void Vt102Emulation::sendKeyEvent(QKeyEvent* event)
+         }
+         else if (!entry.text().isEmpty())
+         {
+-            textToSend += _codec->fromUnicode(entry.text(true,modifiers));
++            textToSend += entry.text(true,modifiers);
+         }
+         else
+             textToSend += _codec->fromUnicode(event->text());
