@@ -4,6 +4,18 @@ konsole (4:14.12.3-1~) UNRELEASED; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 26 Mar 2015 13:20:23 +0100
 
+konsole (4:14.12.3-0ubuntu2) vivid; urgency=medium
+
+  * Add upstream_control-space.diff to fix emacs use
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Mar 2015 14:30:11 +0100
+
+konsole (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:19:42 -0700
+
 konsole (4:14.12.2-1) experimental; urgency=medium
 
   * New upstream release (14.12.2).
@@ -14,6 +26,12 @@ konsole (4:14.12.2-1) experimental; urgency=medium
   * Update install files.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 24 Feb 2015 13:13:00 +0100
+
+konsole (4:14.12.2-0ubuntu2) vivid; urgency=medium
+
+  * Add upstream_control-space.diff to fix emacs use
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 02 Mar 2015 13:43:47 +0100
 
 konsole (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
