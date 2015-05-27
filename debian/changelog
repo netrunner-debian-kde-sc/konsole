@@ -2,6 +2,7 @@ konsole (4:15.04.1-1~) UNRELEASED; urgency=medium
 
   * New upstream release (15.04.0).
   * New upstream release (15.04.1).
+  * Remove upstream patch: upstream_control-space.diff
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 18 May 2015 14:36:24 +0200
 
