@@ -1,6 +1,7 @@
 usr/bin/konsole
 usr/bin/konsoleprofile
 usr/lib/*/libkdeinit5_konsole.so
+usr/share/appdata/org.kde.konsole.appdata.xml
 usr/share/applications/org.kde.konsole.desktop
 usr/share/doc/HTML/*/konsole/
 usr/share/knotifications5/konsole.notifyrc
