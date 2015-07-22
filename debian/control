@@ -1,4 +1,4 @@
-Source: konsole
+Source: konsole5
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
@@ -40,14 +40,14 @@ Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/applications/konsole.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/konsole.git
 
-Package: konsole
+Package: konsole5
 Architecture: any
-Depends: konsole-kpart (= ${binary:Version}),
+Depends: konsole5-kpart (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
+Conflicts: konsole (<= 4:15.04.3-1~)
+Replaces: konsole (<= 4:15.04.3-1~)
 Provides: x-terminal-emulator
-Conflicts: konsole5
-Replaces: konsole5
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
  multiple terminal sessions inside one window using detachable tabs.
@@ -55,11 +55,11 @@ Description: X terminal emulator
  Konsole supports powerful terminal features, such as customizable schemes,
  saved sessions, and output monitoring.
 
-Package: konsole-kpart
+Package: konsole5-kpart
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: konsole5
-Replaces: konsole5
+Conflicts: konsole-kpart (<= 4:15.04.3-1~)
+Replaces: konsole-kpart (<= 4:15.04.3-1~)
 Description: Konsole plugin for Qt applications
  Konsole is a terminal emulator built on the KDE Platform. It can contain
  multiple terminal sessions inside one window using detachable tabs.
@@ -67,13 +67,13 @@ Description: Konsole plugin for Qt applications
  Konsole supports powerful terminal features, such as customizable schemes,
  saved sessions, and output monitoring.
 
-Package: konsole-dbg
+Package: konsole5-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: konsole (= ${binary:Version}), ${misc:Depends}
-Breaks: kdebase-dbg (<< 4:4.6.80)
-Replaces: kdebase-dbg (<< 4:4.6.80)
+Depends: konsole5 (= ${binary:Version}), ${misc:Depends}
+Breaks: konsole-dbg (<= 4:15.04.3-1~)
+Replaces: konsole-dbg (<= 4:15.04.3-1~)
 Description: debugging symbols for the KDE X terminal emulator
  This package contains debugging files used to investigate problems with
  binaries included in the KDE X terminal emulator.
