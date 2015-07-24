@@ -6,6 +6,8 @@ konsole (4:15.04.3-1~) UNRELEASED; urgency=medium
   * Remove upstream patch: upstream_control-space.diff
   * New upstream release (15.04.2).
   * New upstream release (15.04.3).
+  * Bump pkg-kde-tools's version requirement to 0.15.16~, as we need
+    features from it.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove Eshat cakar from Uploaders at his own request. Thanks Eshat
