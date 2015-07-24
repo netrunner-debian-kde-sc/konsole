@@ -8,6 +8,10 @@ konsole (4:15.04.3-1~) UNRELEASED; urgency=medium
   * New upstream release (15.04.3).
   * Bump pkg-kde-tools's version requirement to 0.15.16~, as we need
     features from it.
+  * Make konsole depend on konsole4-kpart. This ensures a smooth upgrade
+    for rdeps using konsole4's kpart. We will switch the rdeps later on
+    and we can drop this dependency once all the rdeps are updated or
+    whenever they are ported to KF5.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove Eshat cakar from Uploaders at his own request. Thanks Eshat
