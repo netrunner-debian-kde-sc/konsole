@@ -1,12 +1,10 @@
-konsole5 (4:15.04.3-1~) UNRELEASED; urgency=medium
+konsole (4:15.04.3-1~) UNRELEASED; urgency=medium
 
   * New upstream release (15.04.0).
   * New upstream release (15.04.1).
   * Remove upstream patch: upstream_control-space.diff
   * New upstream release (15.04.2).
   * New upstream release (15.04.3).
-  * Rename src and binary packages to konsole5 (qt5 version) to allow a
-    smooth upgrade path.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:30:14 +0200
 

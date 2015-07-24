@@ -1,5 +1,0 @@
-konsole5: package-name-doesnt-match-sonames libkdeinit5-konsole
-konsole5: shlib-without-versioned-soname usr/lib/*/libkdeinit5_konsole.so libkdeinit5_konsole.so
-konsole5: binary-without-manpage usr/bin/konsole
-konsole5: binary-without-manpage usr/bin/konsoleprofile
-konsole5: postinst-must-call-ldconfig usr/lib/*/libkdeinit5_konsole.so
