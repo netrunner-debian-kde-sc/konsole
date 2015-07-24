@@ -10,6 +10,7 @@ konsole (4:15.04.3-1~) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove Eshat cakar from Uploaders at his own request. Thanks Eshat
     for your work!
+  * Remove references to packages never shipped in Debian.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:30:14 +0200
 

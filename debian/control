@@ -30,7 +30,7 @@ Build-Depends: cmake (>= 2.8.12),
                libkf5windowsystem-dev (>= 5.6.0~),
                libkf5xmlgui-dev (>= 5.6.0~),
                libx11-dev,
-               pkg-kde-tools (>= 0.15.15ubuntu1~),
+               pkg-kde-tools (>= 0.15.15~),
                qtbase5-dev (>= 5.4),
                qtscript5-dev (>= 5.4)
 Standards-Version: 3.9.6
@@ -44,8 +44,6 @@ Depends: konsole-kpart (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: x-terminal-emulator
-Conflicts: konsole5
-Replaces: konsole5
 Description: X terminal emulator
  Konsole is a terminal emulator built on the KDE Platform. It can contain
  multiple terminal sessions inside one window using detachable tabs.
@@ -56,8 +54,6 @@ Description: X terminal emulator
 Package: konsole-kpart
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: konsole5
-Replaces: konsole5
 Description: Konsole plugin for Qt applications
  Konsole is a terminal emulator built on the KDE Platform. It can contain
  multiple terminal sessions inside one window using detachable tabs.
