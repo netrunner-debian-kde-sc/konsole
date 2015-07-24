@@ -30,7 +30,7 @@ Build-Depends: cmake (>= 2.8.12),
                libkf5windowsystem-dev (>= 5.6.0~),
                libkf5xmlgui-dev (>= 5.6.0~),
                libx11-dev,
-               pkg-kde-tools (>= 0.15.15~),
+               pkg-kde-tools (>= 0.15.16~),
                qtbase5-dev (>= 5.4),
                qtscript5-dev (>= 5.4)
 Standards-Version: 3.9.6
