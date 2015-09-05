@@ -1,3 +1,9 @@
+konsole (4:15.08.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Felix Geyer <fgeyer@debian.org>  Sat, 05 Sep 2015 09:54:46 +0200
+
 konsole (4:15.04.3-2) unstable; urgency=medium
 
   * Team upload.
