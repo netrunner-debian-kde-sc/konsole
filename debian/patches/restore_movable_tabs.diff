@@ -1,0 +1,114 @@
+From: Kurt Hindenburg <kurt.hindenburg@gmail.com>
+Date: Mon, 17 Aug 2015 13:13:29 +0000
+Subject: Restore movable tabs
+X-Git-Url: http://quickgit.kde.org/?p=konsole.git&a=commitdiff&h=17b0fb74cb8df7b87d47ded651d686045880387c
+---
+Restore movable tabs
+
+Using the mouse, the tabs are movable again.  Also this allow for dnd
+outside of current window to create a new window.
+
+Thanks to David Edmundson david davidedmundson co uk for patch.
+
+BUG: 348057
+BUG: 347094
+REVIEW: 124739
+(cherry picked from commit a9bac171f77982c6c20a437bc94b43e8ef863a87)
+---
+
+
+--- a/src/ViewContainer.cpp
++++ b/src/ViewContainer.cpp
+@@ -264,9 +264,7 @@
+     connect(_tabBar, &Konsole::ViewContainerTabBar::moveViewRequest, this, &Konsole::TabbedViewContainer::onMoveViewRequest);
+     connect(_tabBar, &Konsole::ViewContainerTabBar::customContextMenuRequested, this, &Konsole::TabbedViewContainer::openTabContextMenu);
+ 
+-    // The below need converted to work with Qt5 QTabBar
+-    //connect(_tabBar, &Konsole::ViewContainerTabBar::wheelDelta, this, &Konsole::TabbedViewContainer::wheelScrolled);
+-    //connect(_tabBar, &Konsole::ViewContainerTabBar::initiateDrag, this, &Konsole::TabbedViewContainer::startTabDrag);
++    connect(_tabBar, &Konsole::ViewContainerTabBar::initiateDrag, this, &Konsole::TabbedViewContainer::startTabDrag);
+ 
+     // The context menu of tab bar
+     _contextPopupMenu = new QMenu(_tabBar);
+
+--- a/src/ViewContainerTabBar.cpp
++++ b/src/ViewContainerTabBar.cpp
+@@ -30,6 +30,7 @@
+ #include <QtGui/QDragMoveEvent>
+ #include <QtGui/QIcon>
+ #include <QTabBar>
++#include <QApplication>
+ 
+ // KDE
+ #include <KLocalizedString>
+@@ -50,10 +51,36 @@
+     setSelectionBehaviorOnRemove(QTabBar::SelectPreviousTab);
+     setElideMode(Qt::ElideLeft);
+ 
++    setAcceptDrops(true);
++    setMouseTracking(true);
++
+     setWhatsThis(xi18nc("@info:whatsthis",
+                        "<title>Tab Bar</title>"
+                        "<para>The tab bar allows you to switch and move tabs. You can double-click a tab to change its name.</para>"));
+ }
++
++void ViewContainerTabBar::mousePressEvent(QMouseEvent* event)
++{
++    if (event->buttons() == Qt::LeftButton) {
++        _dragStart = event->pos();
++    }
++    QTabBar::mousePressEvent(event);
++}
++
++void ViewContainerTabBar::mouseMoveEvent(QMouseEvent* event)
++{
++    if (event->buttons() == Qt::LeftButton) {
++        QPoint dragPos = _dragStart - event->pos();
++        if (dragPos.manhattanLength() > QApplication::startDragDistance()) {
++            int tab = tabAt(_dragStart);
++            if (tab != -1) {
++                emit initiateDrag(tab);
++            }
++        }
++    }
++    QTabBar::mouseMoveEvent(event);
++}
++
+ 
+ void ViewContainerTabBar::dragEnterEvent(QDragEnterEvent* event)
+ {
+
+--- a/src/ViewContainerTabBar.h
++++ b/src/ViewContainerTabBar.h
+@@ -47,14 +47,17 @@
+     TabbedViewContainer* connectedTabbedViewContainer();
+ 
+ signals:
++    void initiateDrag(int index);
+     void querySourceIndex(const QDropEvent* event, int& sourceIndex) const;
+     void moveViewRequest(int index, const QDropEvent* event, bool& success, TabbedViewContainer* sourceTabbedContainer);
+ 
+ protected:
+-    virtual void dragEnterEvent(QDragEnterEvent* event);
+-    virtual void dragLeaveEvent(QDragLeaveEvent* event);
+-    virtual void dragMoveEvent(QDragMoveEvent* event);
+-    virtual void dropEvent(QDropEvent* event);
++    void mousePressEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
++    void mouseMoveEvent(QMouseEvent *event) Q_DECL_OVERRIDE;
++    virtual void dragEnterEvent(QDragEnterEvent* event) Q_DECL_OVERRIDE;
++    virtual void dragLeaveEvent(QDragLeaveEvent* event) Q_DECL_OVERRIDE;
++    virtual void dragMoveEvent(QDragMoveEvent* event) Q_DECL_OVERRIDE;
++    virtual void dropEvent(QDropEvent* event) Q_DECL_OVERRIDE;
+ 
+ private:
+     // show the indicator arrow which shows where a dropped tab will
+@@ -74,6 +77,8 @@
+     bool _drawIndicatorDisabled;
+     QString _supportedMimeType;
+     TabbedViewContainer* _connectedContainer;
++    QPoint _dragStart;
++
+ };
+ }
+ 

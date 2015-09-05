@@ -1,6 +1,8 @@
 konsole (4:15.08.0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Fix tabs not being movable using the mouse.
+    - Cherry-pick upstream fix in restore_movable_tabs.diff
 
  -- Felix Geyer <fgeyer@debian.org>  Sat, 05 Sep 2015 09:54:46 +0200
 
