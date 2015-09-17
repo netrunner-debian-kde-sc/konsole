@@ -1,3 +1,10 @@
+konsole (4:15.08.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Drop restore_movable_tabs.diff, applied upstream.
+
+ -- Felix Geyer <fgeyer@debian.org>  Thu, 17 Sep 2015 18:09:26 +0200
+
 konsole (4:15.08.0-1) unstable; urgency=medium
 
   * Team upload.
