@@ -1,3 +1,9 @@
+konsole (4:15.08.1-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Vivid backport
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 01 Oct 2015 11:11:08 -0700
+
 konsole (4:15.08.1-0ubuntu1) wily; urgency=medium
 
   * New upstream release (15.08.1)
