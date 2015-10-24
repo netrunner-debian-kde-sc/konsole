@@ -1,5 +1,9 @@
 konsole (4:15.08.2-2) UNRELEASED; urgency=medium
 
+  [ Felix Geyer ]
+  * Remove dependency on konsole4-kpart since the rdeps have been fixed.
+    (Closes: #793746)
+
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Oct 2015 16:20:32 -0300
 
 konsole (4:15.08.2-1) unstable; urgency=medium

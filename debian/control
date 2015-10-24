@@ -41,7 +41,6 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/konsole.git
 Package: konsole
 Architecture: any
 Depends: konsole-kpart (= ${binary:Version}),
-         konsole4-kpart,
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: x-terminal-emulator
