@@ -1,4 +1,4 @@
-konsole (4:15.08.3-1~) UNRELEASED; urgency=medium
+konsole (4:15.08.3-1) unstable; urgency=medium
 
   [ Felix Geyer ]
   * Remove dependency on konsole4-kpart since the rdeps have been fixed.
@@ -7,7 +7,7 @@ konsole (4:15.08.3-1~) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * New upstream release (15.08.3).
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Nov 2015 09:49:49 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:40:02 +0100
 
 konsole (4:15.08.2-1) unstable; urgency=medium
 
