@@ -10,4 +10,4 @@ override_dh_auto_test:
 	:
 
 override_dh_strip:
-	$(overridden_command) --dbg-package=konsole-dbg
+	$(overridden_command) --ddeb-migration='konsole-dbg (<= 4:15.12.1-1~~)'

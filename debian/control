@@ -63,14 +63,3 @@ Description: Konsole plugin for Qt applications
  .
  This package provides the kpart needed by other appss to embedd konsole in
  them.
-
-Package: konsole-dbg
-Section: debug
-Architecture: any
-Priority: extra
-Depends: konsole (= ${binary:Version}), ${misc:Depends}
-Breaks: kdebase-dbg (<< 4:4.6.80)
-Replaces: kdebase-dbg (<< 4:4.6.80)
-Description: debugging symbols for the KDE X terminal emulator
- This package contains debugging files used to investigate problems with
- binaries included in the KDE X terminal emulator.
