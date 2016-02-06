@@ -1,8 +1,33 @@
-konsole (4:15.12.0-0ubuntu1) UNRELEASED; urgency=medium
+konsole (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Merged with Debian 
 
- -- Clive Johnston <clivejo@aol.com>  Sat, 02 Jan 2016 14:15:42 +0000
+ -- Clive Johnston <clivejo@aol.com>  Sat, 06 Feb 2016 18:04:20 +0000
+
+konsole (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:59 +0100
+
+konsole (4:15.08.3-1) unstable; urgency=medium
+
+  [ Felix Geyer ]
+  * Remove dependency on konsole4-kpart since the rdeps have been fixed.
+    (Closes: #793746)
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:40:02 +0100
+
+konsole (4:15.08.2-1) unstable; urgency=medium
+
+  * New upstream release (15.08.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 16 Oct 2015 08:07:03 +0200
 
 konsole (4:15.08.2-0ubuntu1) wily; urgency=medium
 
@@ -11,11 +36,27 @@ konsole (4:15.08.2-0ubuntu1) wily; urgency=medium
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 14 Oct 2015 12:38:42 +0100
 
+konsole (4:15.08.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Drop restore_movable_tabs.diff, applied upstream.
+
+ -- Felix Geyer <fgeyer@debian.org>  Thu, 17 Sep 2015 18:09:26 +0200
+
 konsole (4:15.08.1-0ubuntu1) wily; urgency=medium
 
   * New upstream release (15.08.1)
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 22 Sep 2015 17:14:09 +0100
+
+konsole (4:15.08.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Fix tabs not being movable using the mouse.
+    - Cherry-pick upstream fix in restore_movable_tabs.diff
+
+ -- Felix Geyer <fgeyer@debian.org>  Sat, 05 Sep 2015 10:05:51 +0200
 
 konsole (4:15.08.0-0ubuntu1) wily; urgency=medium
 
@@ -35,6 +76,38 @@ konsole (4:15.07.90-0ubuntu1) wily; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 11 Aug 2015 22:23:53 +0200
 
+konsole (4:15.04.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 26 Jul 2015 22:19:27 -0300
+
+konsole (4:15.04.3-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.04.0).
+  * New upstream release (15.04.1).
+  * Remove upstream patch: upstream_control-space.diff
+  * New upstream release (15.04.2).
+  * New upstream release (15.04.3).
+  * Bump pkg-kde-tools's version requirement to 0.15.16~, as we need
+    features from it.
+  * Make konsole depend on konsole4-kpart. This ensures a smooth upgrade
+    for rdeps using konsole4's kpart. We will switch the rdeps later on
+    and we can drop this dependency once all the rdeps are updated or
+    whenever they are ported to KF5.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Remove Eshat cakar from Uploaders at his own request. Thanks Eshat
+    for your work!
+  * Remove references to packages never shipped in Debian.
+  * Improve konsole-kpart description.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 24 Jul 2015 19:04:35 -0300
+
 konsole (4:15.04.2-0ubuntu1) wily; urgency=medium
 
   [ Scarlett Clark ]
@@ -47,6 +120,12 @@ konsole (4:15.04.2-0ubuntu1) wily; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Jun 2015 19:15:37 +0200
 
+konsole (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:13:23 +0200
+
 konsole (4:14.12.3-0ubuntu2) vivid; urgency=medium
 
   * Add upstream_control-space.diff to fix emacs use
@@ -58,6 +137,17 @@ konsole (4:14.12.3-0ubuntu1) vivid; urgency=medium
   * New upstream release
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 13:19:42 -0700
+
+konsole (4:14.12.2-1) experimental; urgency=medium
+
+  * New upstream release (14.12.2).
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Update copyright information.
+  * Update install files.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 24 Feb 2015 13:13:00 +0100
 
 konsole (4:14.12.2-0ubuntu2) vivid; urgency=medium
 
@@ -484,7 +574,7 @@ konsole (4:4.10.90-0ubuntu1) saucy; urgency=low
   * New upstream beta release
 
   [ Philip Muškovac ]
-  * Add doc picture to konsole.install 
+  * Add doc picture to konsole.install
 
  -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:19:44 +0100
 
@@ -494,8 +584,8 @@ konsole (4:4.10.80-0ubuntu1) saucy; urgency=low
   * New upstream release
 
   [ Philip Muškovac ]
-  * Refresh debian-T-addition.diff 
-  * Update konsole.install 
+  * Refresh debian-T-addition.diff
+  * Update konsole.install
 
  -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:28:57 +0100
 
@@ -722,7 +812,7 @@ konsole (4:4.8.2-0ubuntu1) precise; urgency=low
 
 konsole (4:4.8.1-0ubuntu1) precise; urgency=low
 
-  * New upstream release 
+  * New upstream release
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:39:13 +0100
 
@@ -788,7 +878,7 @@ konsole (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
   * New upstream release (LP: #872506)
 
   [ Philip Muškovac ]
-  * Add libx11-dev to build-deps so XKB is found. 
+  * Add libx11-dev to build-deps so XKB is found.
 
  -- Philip Muškovac <yofel@kubuntu.org>  Tue, 18 Oct 2011 07:28:12 +0200
 
@@ -817,9 +907,8 @@ konsole (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
 konsole (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
 
-  * New upstream release candidate 
+  * New upstream release candidate
     - update for split packaging
   * Repack upstream tar to include COPYING files
 
  -- Philip Muškovac <yofel@kubuntu.org>  Fri, 08 Jul 2011 12:41:10 +0200
-

@@ -1,8 +1,8 @@
 Index: konsole/src/main.cpp
 ===================================================================
---- konsole.orig/src/main.cpp	2013-09-26 13:02:46.456857435 +0000
-+++ konsole/src/main.cpp	2013-09-26 13:03:25.331385762 +0000
-@@ -184,6 +184,7 @@
+--- konsole.orig/src/main.cpp	2015-05-27 18:02:19.804651972 +0200
++++ konsole/src/main.cpp	2015-05-27 18:02:19.800652134 +0200
+@@ -197,6 +197,7 @@
                        " (for use with -p)"));
      options.add("p <property=value>",
                  ki18nc("@info:shell", "Change the value of a profile property."));
